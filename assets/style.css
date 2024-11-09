@@ -103,11 +103,15 @@ button:focus {
 
 .subheader {
     font-size: 18px;
-    font-weight: 300;
+    font-weight: 200;
     line-height: 28px;
     text-align: center;
+    color: #ffffff79;
     margin: auto;
-    /* margin-left: 100px; */
+    text-shadow: 
+        0 0 1.5px #ffffff79, 
+        0 0 3px #ab8eeb94;
+    /* margin-left: 150px; */
 }
 
 .ui.header.jumbo h1 {
@@ -131,17 +135,56 @@ button:focus {
     /* margin-left:100px; */
 }
 
+/* @keyframes glow-pulse {
+    0%, 100% {
+      text-shadow: 
+        0 0 3px #ffffff, 
+        0 0 5px #ab8eeb;
+    }
+    50% {
+      text-shadow: 
+        0 0 6px #ffffff, 
+        0 0 12px #ab8eeb;
+    }
+  } */
+
+@keyframes hover-float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px); /* Move up slightly */
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
 .ui.header.headertext h1 {
     color: white;
-    font-size: 3rem;
+    font-size: 5rem;
     font-family: le-monde-livre-classic-byol, serif;
-    font-weight: 600;
+    font-weight: 400;
     text-align: center;
+    /* width: 400px; */
     /* margin-left:100px; */
+    text-shadow: 
+        0 0 2px #ffffff, 
+        0 0 3px #ab8eeb;
+    animation: glow-pulse 2s infinite ease-in-out; /* Animation loop */
+    transition: text-shadow 0.3s ease-in-out;
+
+}
+.ui.header.headertext h1:hover{
+    text-shadow: 
+        0 0 5px #ffffff, 
+        0 0 10px #ab8eeb, 
+        0 0 10px #ab8eeb;
+    animation: hover-float 3s infinite ease-in-out, glow-pulse 2s infinite ease-in-out;
 }
 
 #aboutMe {
-    width: 40%;
+    width: 38%;
 }
 
 .landing {
@@ -177,21 +220,27 @@ h1, h2, h3, a, p, span {
 
 a {
     text-decoration: none;
+    text-shadow: 
+        0 0 1px #ffffff, 
+        0 0 1px #ab8eeb;
 }
 
 a:hover {
-    color: var(--highlight-color);
+    /* color: var(--highlight-color); */
+    text-shadow: 
+        0 0 1.5px #ffffff, 
+        0 0 3px #ab8eeb;
 }
 
 nav {
     display: flex;
     width: 100%;
     border-bottom: 1px solid var(white);
-    position: -webkit-sticky; /* For Safari */
+    position: -webkit-sticky; 
     position: sticky;
     top: 0;
     z-index: 1000;
-    backdrop-filter: blur(10px); /* Blurs the content behind */
+    backdrop-filter: blur(10px); 
     transition: background-color 0.3s ease-in-out;
 }
   
@@ -265,7 +314,7 @@ nav .nav-section {
 nav.scrolled {
     background-color: rgba(0, 0, 0, 0.7);
 }
-
+ 
 
 
 /* .ui.four.item.secondary.menu {

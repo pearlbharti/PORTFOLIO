@@ -106,16 +106,16 @@ var numProjTotal = 6;
 
 var projects = {
     "proj0": {
-        "title": "Upshift Swap Shop",
-        "projName": "eco store's design",
-        "desc": "Designing an app for Madison's sole sustainable swap shop to minimize garment waste aimed at incentivizing users with loyalty points, offer customizable and affordable gifting hampers, enable online shopping, and establishing a distinctive brand identity and voice.",
-        "link": "Upshift.html",
-        "picture": "assets/upshift.jpg",
+        "title": "Schneider National",
+        "projName": "Freight Search Engine Redesign",
+        "desc": "Redesigning & developing Schneider's freight search engine to streamline the search process, improve usability with multi-capacity selection, ensure above-the-fold search options, & enable mileage-based results for enhanced user experience.",
+        "link": "schneider.html",
+        "picture": "schneider hero video.mp4",
     },
     "proj1": {
         "title": "Rec Well, UW-Madison ",
         "projName": "Critical break-points redesign",
-        "desc": "User research study and initial redesign proposal for Recreation and Wellbeing at UW-Madison, focused on identifying pain points and recommending improvements in key areas of the website. Implementation is planned for the next fiscal year under my direction.",
+        "desc": "User research study and initial redesign proposal for Recreation and Wellbeing at UW-Madison, focused on identifying pain points and recommending improvements in key areas of the website. Implementation planned for the next fiscal year.",
         "link":"recwell.html",
         "picture": "recwell.png",
     },
@@ -127,18 +127,18 @@ var projects = {
         "picture": "assets/smarttagger-prev.jpg",
     },
     "proj3": {
+        "title": "Upshift Swap Shop",
+        "projName": "eco store's design",
+        "desc": "Designing an app for Madison's sole sustainable swap shop to minimize garment waste aimed at incentivizing users with loyalty points, offer customizable and affordable gifting hampers, enable online shopping, and establishing a distinctive brand identity and voice.",
+        "link": "Upshift.html",
+        "picture": "assets/upshift.jpg",
+    },
+    "proj4": {
         "title": "Spotify",
         "projName": "User Research",
         "desc": "Spotify's user research study to understand pain-points and propose potential solutions.",
         "link": "Spotify.html",
         "picture": "C:\Users\Pearl\Desktop\PEARLPORTFOLIO\assets\spothero.jpg",
-    },
-    "proj4": {
-        "title": "Schneider National",
-        "projName": "Freight Search Engine Redesign",
-        "desc": "Designing the interaction model of the BigBlueButton video and presentation platform to accommodate large (50+) users sessions.",
-        "link": "inprogress.html",
-        "picture": "assets/bbb-prev.jpg",
     },
     "proj5": {
         "title": "Wisconsin Department of Natural Resources",
