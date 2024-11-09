@@ -102,7 +102,7 @@ $(document).ready(function() {
 //PROJECT RENDERING
 
 var numProjShown = 4;
-var numProjTotal = 7;
+var numProjTotal = 6;
 
 var projects = {
     "proj0": {
@@ -116,6 +116,7 @@ var projects = {
         "title": "Rec Well, UW-Madison ",
         "projName": "Critical break-points redesign",
         "desc": "User research study and initial redesign proposal for Recreation and Wellbeing at UW-Madison, focused on identifying pain points and recommending improvements in key areas of the website. Implementation is planned for the next fiscal year under my direction.",
+        "link":"recwell.html",
         "picture": "recwell.png",
     },
     "proj2": {
