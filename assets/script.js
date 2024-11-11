@@ -1,3 +1,69 @@
+// // script.js
+// const scene = new THREE.Scene();
+// const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+// const renderer = new THREE.WebGLRenderer({ canvas: document.getElementById('backgroundCanvas'), alpha: true });
+// renderer.setSize(window.innerWidth, window.innerHeight);
+
+// // Shader for the grainy hue-shifting background
+// const fragmentShader = `
+//   uniform float u_time;
+//   uniform vec2 u_resolution;
+//   uniform vec2 u_mouse;
+
+//   float random(vec2 uv) {
+//     return fract(sin(dot(uv, vec2(12.9898, 78.233))) * 43758.5453123);
+//   }
+
+//   void main() {
+//     vec2 uv = gl_FragCoord.xy / u_resolution;
+    
+//     // Centered grainy dot effect
+//     float distToCenter = length(uv - vec2(0.5));
+//     float radius = smoothstep(0.5, 0.3, distToCenter - u_time * 0.1); // Expanding radius
+
+//     // Grain and color
+//     float grain = random(uv * u_time) * 0.2;
+//     vec3 color = vec3(0.5 + 0.5 * cos(u_time + uv.xyx + vec3(0, 2, 4)));
+
+//     gl_FragColor = vec4(color * radius + grain, 1.0);
+//   }
+// `;
+
+// // Define geometry and material using the shader
+// const geometry = new THREE.PlaneGeometry(2, 2);
+// const material = new THREE.ShaderMaterial({
+//   uniforms: {
+//     u_time: { value: 0.0 },
+//     u_resolution: { value: new THREE.Vector2(window.innerWidth, window.innerHeight) },
+//     u_mouse: { value: new THREE.Vector2(0.5, 0.5) }
+//   },
+//   fragmentShader: fragmentShader
+// });
+
+// const plane = new THREE.Mesh(geometry, material);
+// scene.add(plane);
+
+// camera.position.z = 1;
+
+// function animate() {
+//   material.uniforms.u_time.value += 0.05; // Time-based animation for hue change
+//   renderer.render(scene, camera);
+//   requestAnimationFrame(animate);
+// }
+
+// animate();
+
+// // Handle window resize
+// window.addEventListener('resize', () => {
+//   renderer.setSize(window.innerWidth, window.innerHeight);
+//   material.uniforms.u_resolution.value.set(window.innerWidth, window.innerHeight);
+// });
+
+
+
+//old
+
+
 $("#KoiStart").on("loadeddata", function() {
     document.querySelector(".header-text").style.WebkitAnimationPlayState = "running";
     /*$("#KoiStart").bind("ended", function() {
