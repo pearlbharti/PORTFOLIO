@@ -63,18 +63,6 @@ section{
     cursor: default;
 }
 
-.navbar a{
-    font-size: 1.7rem;
-    color: var(--text-color);
-    margin-left: 4rem;
-    transition: .3s;
-
-}
-
-.navbar a:hover,
-.navbar a.active {
-    color: var(--main-color);
-}
 
 #menu-icon {
     font-size: 3.6rem ;
@@ -2712,63 +2700,21 @@ body {
     line-height: 155%
 }
 
-h1 {
-    margin-top: 0;
-    margin-bottom: 16px;
-    font-family: 'europa', sans-serif;
-    font-size: 4rem;
-    color: white;
-}
 
-h2 {
-    /* margin-top: 4px; */
-    margin-bottom: 10px;
-    font-family: 'europa', sans-serif;
-    font-size: 2.3rem;
-    line-height: 140%
-}
 
-h3 {
-    margin-top: 12px;
-    margin-bottom: 10px;
-    font-family: 'europa', sans-serif;
-    font-size: 2.5rem;
-}
-
-h4 {
-    font-family: 'europa', sans-serif;
-    font-size: 1rem
-}
-
-h5 {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-family: 'europa', sans-serif;
-    font-size: 14px;
-    line-height: 20px
-}
-
-h6 {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-family: 'europa', sans-serif;
-    font-size: 12px;
-    line-height: 18px
-}
-
-p {
+/* p {
     color: rgb(160, 160, 160);;
     margin-bottom: 10px;
     font-size: 1.7rem;
     font-weight: 200;
-}
+} */
 
-a {
+/* a {
     color: rgb(255, 255, 255);
     font-weight: 200;
     font-size: 1.7rem;
     text-decoration: none;
-}
+} */
 
 ul {
     font-size: 1.6rem;
@@ -3168,13 +3114,7 @@ figcaption {
     display: none
 }
 
-.heading-l {
-    margin-bottom: 20px;
-    font-family: Cabinetgrotesk Variable;
-    font-size: 1.7rem;
-    font-weight: 700;
-    line-height: 140%
-}
+
 
 .heading-l.light {
     color: var(--gray-3)

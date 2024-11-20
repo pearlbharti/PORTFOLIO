@@ -72,12 +72,12 @@ button:focus {
 }
 
 #KoiCycle {
-    z-index: -1;
-    visibility: hidden;
+    z-index: 999;
+    /* visibility: hidden; */
 }
 
 .header-content {
-    height: 100vh;
+    /* height: 100vh; */
     position: relative;
     text-align: center;
 }
@@ -252,22 +252,25 @@ a:hover {
 nav {
     display: flex;
     width: 100%;
-    border-bottom: 1px solid var(white);
-    position: -webkit-sticky; 
-    position: sticky;
+    border-bottom: 1px solid var(--white); /* Ensure var(--white) is defined */
+    position: fixed; 
     top: 0;
-    z-index: 1000;
+    z-index: 1000; /* Ensure it's on top */
     backdrop-filter: blur(10px); 
     transition: background-color 0.3s ease-in-out;
+    font-size: 15px;
+    background-color: rgba(0, 0, 0, 0.7); /* Optional: Add a solid background */
 }
-  
+
 nav .nav-section {
-    padding: 0.6rem 2.5rem;
+    padding: 5px 20px;
     display: flex;
     gap: 1rem;
-    border-left: 1px solid var(white);
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
     align-items: center;
     justify-content: center;
+    width: 100%;
+    z-index: 1000;
 }
 
 #nav-mobile-section {
@@ -321,7 +324,7 @@ nav .nav-section {
 
 #nav-link-section {
     flex-basis: 50%;
-    gap: 6rem; 
+    gap: 50px; 
 }
 
 #nav-social-section {
@@ -329,8 +332,9 @@ nav .nav-section {
 }
 
 nav.scrolled {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.7); /* Keep it darker on scroll */
 }
+
  
 
 

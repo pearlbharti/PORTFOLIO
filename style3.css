@@ -50,21 +50,34 @@ section{
     padding: 10rem 9% 2rem;
 }
 
+h1, h2, h3, a, p, span {
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    color: white;
+    margin: 0px;
+}
+
 
 nav {
-    background: 0 0;
     display: flex;
     width: 100%;
     border-bottom: 1px solid var(white);
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(10px); 
+    transition: background-color 0.3s ease-in-out;
+    font-size: 15px;
 }
-
+  
 nav .nav-section {
-    padding: 0.6rem 2.5rem;
+    padding: 5px 20px;
     display: flex;
     gap: 1rem;
-    border-left: 1px solid var(white);
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
     align-items: center;
     justify-content: center;
+    width: 100%; /* Or a specific width if necessary */
 }
 
 #nav-mobile-section {
@@ -118,7 +131,7 @@ nav .nav-section {
 
 #nav-link-section {
     flex-basis: 50%;
-    gap: 6rem; 
+    gap: 50px; 
 }
 
 #nav-social-section {
@@ -127,12 +140,6 @@ nav .nav-section {
 
 nav.scrolled {
     background-color: rgba(0, 0, 0, 0.7);
-}
-
-
-nav.sticky{
-    border-bottom: .1rem solid rgba (0,0,0,.2);
-
 }
 
 .logo{
