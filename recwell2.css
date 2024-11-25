@@ -8,19 +8,17 @@
     border: none;
     outline: none;
     scroll-behavior: smooth;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
-   
+    font-family: 'europa', sans-serif;
 }
 :root {
     /*--bg-color: hsl(34, 12%, 11%);
     --second-bg-color: #343033;
     --text-color: #ffffff;
     --main-color: #99c7be;*/
-    /* --bg-color: #101010; */
     --bg-color: #000000;
     --second-bg-color: #FFFFFF;
     --text-color: #ffffff;
-    --main-color: #83d862;
+    --main-color: #d87d62;
 
 }
 
@@ -66,8 +64,6 @@ section{
 }
 
 
- 
-
 #menu-icon {
     font-size: 3.6rem ;
     color: var(--text-color);
@@ -110,15 +106,6 @@ span{
     color: var(--main-color);
 }
 
-
-.project-overview {
-    font-size: 14px;
-    line-height: 150%;
-    font-weight: 200;
-    color: #e7e7e7; /* Use your preferred color */
-    margin: 0;
-  }
-  
 .home-content h1{
     font-size:10rem;
     font-weight: 700;
@@ -534,8 +521,7 @@ template {
 }
 
 a {
-    background-color: transparent;
-    color:white;
+    background-color: transparent
 }
 
 a:active,
@@ -755,8 +741,7 @@ body {
     color: #333;
     background-color: #fff;
     margin: 0;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
-    font-size: 14px;
+    font-family: Arial, sans-serif;
     font-size: 14px;
     line-height: 20px
 }
@@ -911,7 +896,7 @@ pre.w-code-block code {
     display: inline-block !important
 }
 
-/* h1,
+h1,
 h2,
 h3,
 h4,
@@ -919,7 +904,7 @@ h5,
 h6 {
     margin-bottom: 10px;
     font-weight: 500
-} */
+}
 
 h1 {
     margin-top: 20px;
@@ -933,6 +918,11 @@ h1 {
     line-height: 36px
 } */
 
+h3 {
+    margin-top: 20px;
+    font-size: 25px;
+    line-height: 30px;
+}
 
 h4 {
     margin-top: 10px;
@@ -952,12 +942,12 @@ h6 {
     line-height: 18px
 }
 
-/* p {
+p {
     margin-top: 0;
     color: #333;
     margin-bottom: 10px;
     line-height: 150%;
-} */
+}
 
 blockquote {
     border-left: 5px solid #e2e2e2;
@@ -2476,7 +2466,7 @@ textarea.w-select {
     display: grid
 }
 
-/* :root {
+:root {
     --gray-1: #ffffff;
     --gray-2: #ffffff;
     --gray-3: #ffffff;
@@ -2500,7 +2490,7 @@ textarea.w-select {
     --untitled-ui-gray600: #ffffff;
     --untitled-ui-gray900: #ffffff;
     --untitled-ui-primary800: #53389e
-} */
+}
 
 .w-layout-layout {
     grid-row-gap: 20px;
@@ -2705,10 +2695,35 @@ textarea.w-select {
 body {
     color: white;
     background-color: #fdfcf9;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
-    font-size: 14px;
+    font-family: 'europa', sans-serif;
     font-size: .875rem;
     line-height: 155%
+}
+
+
+
+/* p {
+    color: rgb(160, 160, 160);;
+    margin-bottom: 10px;
+    font-size: 1.7rem;
+    font-weight: 200;
+} */
+
+/* a {
+    color: rgb(255, 255, 255);
+    font-weight: 200;
+    font-size: 1.7rem;
+    text-decoration: none;
+} */
+
+ul {
+    font-size: 1.6rem;
+    line-height: 30px
+}
+
+ol {
+    padding-left: 40px;
+    font-size: 1rem
 }
 
 img {
@@ -2725,8 +2740,7 @@ blockquote {
     margin-top: 20px;
     margin-bottom: 20px;
     padding: 16px 0 16px 24px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
-    font-size: 14px;
+    font-family: 'europa', sans-serif;
     font-size: 1.8rem;
     line-height: 140%
 }
@@ -3100,13 +3114,7 @@ figcaption {
     display: none
 }
 
-.heading-l {
-    margin-bottom: 20px;
-    font-family: Cabinetgrotesk Variable;
-    font-size: 1.7rem;
-    font-weight: 700;
-    line-height: 140%
-}
+
 
 .heading-l.light {
     color: var(--gray-3)
@@ -3114,10 +3122,10 @@ figcaption {
 
 .caption {
     color: #C5050C;
-    font-size: 1.125rem;
+    font-size: 1.3rem;
 }
 
-.white {
+.caption.white {
     color: var(--white);
 }
 
@@ -3131,16 +3139,6 @@ figcaption {
     text-transform: uppercase;
     font-weight: 400
 }
-
-.next-project-title{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
-    font-size: 14px;
-    font-size: 14px;
-    line-height: 150%;
-    color: whitesmoke;
-    font-weight: 300
-}
-
 
 .caption.text-link {
     color: var(--gray-1);
@@ -3162,9 +3160,8 @@ figcaption {
 
 .heading-m {
     margin-bottom: 12px;
-    font-family: le-monde-livre-classic-byol, serif;
-    font-size: 22px;
-    color: white;
+    font-family: Cabinet Grotesk Variable, sans-serif;
+    font-size: 1.5rem;
     line-height: 140%
 }
 
@@ -3491,36 +3488,17 @@ figcaption {
 }
 
 .styled-rich-text h1 {
-    color: white;
     margin-top: 40px
 }
 
 .styled-rich-text h2 {
-    color: white;
-    line-height: 150%;
-    margin-bottom: 10px;
-    font-size: 22px;
-
+    margin-top: 20px
 }
-
-.styled-rich-text h3 {
-    color: #f2f2f2;
-    line-height: 125%;
-    font-family: Neue Montreal, sans-serif;
-    /* margin-bottom: 10px; */
-    font-size: 25px;
-    font-weight: 300;
-    letter-spacing: -.1px;
-    text-shadow: none;
-
-}
-
 
 .styled-rich-text p {
-    color: #fafafa;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
-    font-size: 14px;
-    line-height: 150%;
+    color: rgb(160, 160, 160);
+    font-size: 1.75rem;
+    line-height: 170%;
     font-weight: 100;
 }
 
@@ -3529,10 +3507,9 @@ figcaption {
 }
 
 .styled-rich-text li {
-    line-height: 150%;
-    font-weight: 100;
-    font-size: 16px;
-    color: #ffffffc1;
+    margin-bottom: 12px;
+    font-size: 1.6rem;
+    color: #ffffff;
 }
 
 .styled-rich-text img {
@@ -3979,7 +3956,7 @@ figcaption {
     background-image: linear-gradient(90deg, #a5a8ff, #ff785d 50%, #e69cff);
     -webkit-background-clip: text;
     background-clip: text;
-    font-family: le-monde-livre-classic-byol, serif;
+    font-family: Cabinet Grotesk Variable, sans-serif;
     font-size: 7rem;
     font-weight: 600;
     line-height: 7rem
@@ -3993,10 +3970,9 @@ figcaption {
 }
 
 .section-heading {
-    color: #fff;
     text-align: left;
     margin-bottom: 8px;
-    font-family: le-monde-livre-classic-byol, serif;
+    font-family: Cabinet Grotesk Variable, sans-serif;
     font-size: 2.5rem;
     line-height: 140%
 }
@@ -4385,7 +4361,7 @@ figcaption {
     grid-column-gap: 32px;
     grid-template-rows: auto;
     grid-template-columns: 1fr 1fr;
-    margin-top: 22px
+    margin-top: 44px
 }
 
 .cancel-button {
@@ -4821,7 +4797,7 @@ figcaption {
 }
 
 .fave-app-revamp-problem-grid {
-    max-width: 70%;
+    max-width: 90%;
     grid-column-gap: 38px;
     grid-row-gap: 32px;
     grid-template-columns: .75fr 1fr;
@@ -5071,7 +5047,7 @@ blockquote::after {
 }
 
 .card-expertise-light {
-    background-color: #ab8eeb50;
+    background-color: var(--white);
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
     border: 1px solid #e0e0e0;

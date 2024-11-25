@@ -102,19 +102,20 @@ button:focus {
 }
 
 .subheader {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 200;
     line-height: 28px;
     text-align: center;
     color: #ffffff79;
     margin: auto;
     text-shadow: 
-        0 0 1.5px #ffffff79, 
-        0 0 3px #ab8eeb94;
+        0 0 1.5px #ffffff, 
+        /* 0 0 1px #ab8eeb94; */
     /* margin-left: 150px; */
 }
 
 .ui.header.jumbo h1 {
+    padding-top: 100px;
     color: white;
     font-size: 32px;
     letter-spacing: 1px;
@@ -168,20 +169,14 @@ button:focus {
     text-align: center;
     /* width: 400px; */
     /* margin-left:100px; */
-    text-shadow: 
+    /* text-shadow: 
         0 0 2px #ffffff, 
-        0 0 3px #ab8eeb;
-    animation: glow-pulse 2s infinite ease-in-out; /* Animation loop */
-    transition: text-shadow 0.3s ease-in-out;
+        0 0 3px #ab8eeb; */
+    /* animation: glow-pulse 2s infinite ease-in-out; /* Animation loop */
+    /* transition: text-shadow 0.3s ease-in-out; */ 
 
 }
-.ui.header.headertext h1:hover{
-    /* text-shadow: 
-        0 0 5px #ffffff, 
-        0 0 10px #ab8eeb, 
-        0 0 10px #ab8eeb; */
-    animation: hover-float 3s infinite ease-in-out, glow-pulse 2s infinite ease-in-out;
-}
+
 
 #aboutMe {
     width: 38%;
@@ -229,7 +224,7 @@ canvas {
 
 
 h1, h2, h3, a, p, span {
-    font-family: "Rubik", sans-serif;
+    font-family: Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif;
     font-weight: 400;
     color: white;
     margin: 0px;
@@ -256,8 +251,9 @@ nav {
     position: fixed; 
     top: 0;
     z-index: 1000; /* Ensure it's on top */
-    backdrop-filter: blur(10px); 
+    backdrop-filter: blur(30px); 
     transition: background-color 0.3s ease-in-out;
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
     font-size: 15px;
     background-color: rgba(0, 0, 0, 0.7); /* Optional: Add a solid background */
 }
@@ -266,7 +262,8 @@ nav .nav-section {
     padding: 5px 20px;
     display: flex;
     gap: 1rem;
-    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    border-left: 1px solid rgba(152, 152, 152, 0.3);
+    border-bottom: 1px solid rgba(152, 152, 152, 0.3);
     align-items: center;
     justify-content: center;
     width: 100%;

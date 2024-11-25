@@ -75,6 +75,9 @@ $("#KoiStart").on("loadeddata", function() {
 
 //$("#KoiStart").defaultPlaybackRate = 0.5;
 
+
+
+
 var timer = 0;
 var num = 150;
 var selectedhome = $("#nav-home");
@@ -176,7 +179,7 @@ var projects = {
         "projName": "Freight Search Engine Redesign",
         "desc": "Redesigning & developing Schneider's freight search engine to streamline the search process, improve usability with multi-capacity selection, ensure above-the-fold search options, & enable mileage-based results for enhanced user experience.",
         "link": "schneider.html",
-        "picture": "schneider hero video.mp4",
+        "picture": "https://d14xe37va4uv2q.cloudfront.net/pearl_portfolio_assets/Schneider-project/schneider+hero.mp4",
     },
     "proj1": {
         "title": "Rec Well, UW-Madison ",
@@ -189,7 +192,7 @@ var projects = {
         "title": "BoxMate",
         "projName": "Website Revamp ",
         "desc": "Designing an web application for a start-up to simplify and streamline the payments page and booking a storage location as well as added features based on user insights.",
-        "link": "boxmate.html",
+        "link": "https://www.figma.com/proto/qJ39h5c6wjfvSaILhQFI69/Boxmate-Redesign?page-id=0%3A1&node-id=137-140&node-type=frame&viewport=74%2C504%2C0.03&t=oXk8W7HdXRDJU6ja-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=158%3A204",
         "picture": "assets/smarttagger-prev.jpg",
     },
     "proj3": {
@@ -223,8 +226,23 @@ function createProj(proj) {
     let link = projects[proj].link;
     let picture = projects[proj].picture;
 
-    var HTMLproj = `<div class='projItem ui two column grid' id="${proj}"><div class='column studyCard'><div class='studyHeader'>${title}</div><div class='studyTitle'>${projName}</div><div class='studyDesc'>${desc}</div><a class='seeMore' href="${link}">Learn more >></a></div><div class='column image-box'><a href="${link}"><img class='prev-img' src="${picture}"/></a><a class='proj-arrow' href="${link}"><img class="navigationArrow" src="assets/arrow-right_2@3x.png"></a></div></div>`
+    var HTMLproj = `
+    <div class='projItem ui two column grid' id="${proj}">
+    <div class='column studyCard'>
+        <div class='studyHeader'>${title}</div>
+        <div class='studyTitle'>${projName}</div>
+        <div class='studyDesc'>${desc}</div>
+        <a class='seeMore' href="${link}">Learn more >></a>
+    </div>
+   <div class='column image-box'>
+        <a href="${link}">
+        <img class='prev-img' src="${picture}"/></a><a class='proj-arrow' href="${link}">
+        <img class="navigationArrow" src="assets/arrow-right_2@3x.png">
+        </a>
 
+   </div>
+</div>
+    `
     var landingStudies = document.querySelector("#landingStudies");
     landingStudies.innerHTML += HTMLproj;
 }

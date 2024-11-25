@@ -397,6 +397,7 @@ span{
     }
 
     .navbar a{
+        font-family: Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif;
         display: block;
         font-size: 2rem;
         margin:  3rem 0;
@@ -1920,6 +1921,7 @@ textarea.w-select {
     }
 
     .navbar{
+        font-family: Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif;
         position: absolute;
         top:100%;
         left: 0;
